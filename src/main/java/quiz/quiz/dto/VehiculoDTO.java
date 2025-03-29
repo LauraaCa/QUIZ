@@ -7,6 +7,6 @@ import java.time.LocalDateTime;
 public record VehiculoDTO (@NotBlank String placa,
                            String color,
                            Long modelo,
-                           LocalDateTime lanzamineto,
-                           String cajaTrasmision) {
+                           LocalDateTime lanzamiento,
+                           String caja) {
 }

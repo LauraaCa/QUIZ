@@ -23,7 +23,7 @@ public class Vehiculo {
     private String color;
     private Long modelo;
     private LocalDateTime lanzamiento;
-    private String cajaTransmision;
+    private String caja;
 
 }
 
