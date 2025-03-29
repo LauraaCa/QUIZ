@@ -6,6 +6,8 @@ import quiz.quiz.dto.VehiculoDTO;
 import quiz.quiz.persistencia.entidades.Vehiculo;
 import quiz.quiz.servicios.VehiculoServicio;
 
+import java.util.List;
+
 @RestController
 @AllArgsConstructor
 @CrossOrigin(origins = "*")
@@ -19,5 +21,9 @@ public class VehiculoControlador {
         return vehiculoServicio.crear(vehiculo);
     }
 
+    @GetMapping("/")
+    public List<Vehiculo> obtener(){
+        return vehiculoServicio.obtenerTodos();
+    }
 
 }

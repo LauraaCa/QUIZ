@@ -6,6 +6,8 @@ import quiz.quiz.dto.VehiculoDTO;
 import quiz.quiz.persistencia.entidades.Vehiculo;
 import quiz.quiz.persistencia.repositorios.VehiculoRepositorio;
 
+import java.util.List;
+
 @Service
 @AllArgsConstructor
 public class VehiculoServicio {
@@ -23,6 +25,10 @@ public class VehiculoServicio {
         if (vehiculoRepositorio.save(vehiculo).getId() > 0)
             return vehiculoDTO;
         else return null;
+    }
+
+    public List<Vehiculo> obtenerTodos(){
+        return vehiculoRepositorio.findAll();
     }
 
 }
