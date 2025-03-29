@@ -10,6 +10,7 @@ import quiz.quiz.servicios.VehiculoServicio;
 @AllArgsConstructor
 @CrossOrigin(origins = "*")
 @RequestMapping("/vehiculos")
+
 public class VehiculoControlador {
     VehiculoServicio vehiculoServicio;
 
