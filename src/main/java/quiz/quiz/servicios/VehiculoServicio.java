@@ -18,8 +18,8 @@ public class VehiculoServicio {
                 .placa(vehiculoDTO.placa())
                 .color(vehiculoDTO.color())
                 .modelo(vehiculoDTO.modelo())
-                .lanzamiento(vehiculoDTO.lanzamineto())
-                .cajaTransmision(vehiculoDTO.cajaTrasmision())
+                .lanzamiento(vehiculoDTO.lanzamiento())
+                .caja(vehiculoDTO.caja())
                 .build();
 
         if (vehiculoRepositorio.save(vehiculo).getId() > 0)
